@@ -1201,9 +1201,9 @@ li {
 }
 
 .projects-grid .pro img {
-        background-color: none;
+        background-color: white;
         border-radius: 1.7rem;
-        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        box-shadow: 0 0 10px white;
         height: auto;
         overflow: hidden;
         width: cover;
