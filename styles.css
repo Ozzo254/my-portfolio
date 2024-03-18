@@ -1193,7 +1193,7 @@ li {
         }
 }
 
-.projects-grid .pro__img {
+.projects-grid .pro img {
         background-color: hsla(0,0%,46%,.2);
         border-radius: 1.7rem;
         box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -1203,7 +1203,7 @@ li {
 }
 
 @media (max-width: 650px) {
-        .projects-grid .pro__img {
+        .projects-grid .pro img {
                 width:100%
         }
 }
