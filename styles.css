@@ -1131,22 +1131,26 @@ li {
         text-align: center;
         text-transform: none
 }
-@media (max-width: 500px){
+@media (max-width: 300px){
+        .projects-grid{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+        }
         .pro{
                 display: flex;
-                text-align: center;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                text-align: center;
+                
         }
         .pro img{
-                flex-direction: column !important;
-                gap: 3rem;
-                height: 30rem;
+                height: auto;
+                width: auto;
                 margin: auto;
                 width: -moz-fit-content;
                 width: -webkit-fit-content;
-                width: auto;
         }
         
 }
@@ -1197,12 +1201,14 @@ li {
 }
 
 .projects-grid .pro img {
-        background-color: hsla(0,0%,46%,.2);
+        background-color: none;
         border-radius: 1.7rem;
         box-shadow: 0 0 10px rgba(0,0,0,.1);
         height: auto;
         overflow: hidden;
-        width: 53rem
+        width: cover;
+        padding: 0 2%;
+        border: none;
 }
 
 @media (max-width: 650px) {
