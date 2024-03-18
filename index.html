@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Web Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f79d0b5d89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Nav-bar Section -->
+
+  <nav >
+    <h2 class="logo">
+      Austine.dev
+    </h2>
+    <div class="nav-right">
+
+      <ul id="menu">
+        <li><a href="#Home">Home</a></hr></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <button class= "dark-mode-btn">
+        Dark </br>mode
+        <i id="button-btn" class="fa fa-toggle-off" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+
+  <div class="container-main" style="margin-top: 5.1%;">
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="content">
+          <div class="hero-main">
+            <div class="hero-text">
+              <h1>Front-End React Developer</h1>
+              <h3>
+                <img src="./Assets/waving_emoji.webp" alt="waving_hand" />
+                Hi, I'm Austine Agunda. A dynamic front-end developer based in  Nairobi, Kenya.📍
+              </h3>
+              <p>
+                I'm passionate about creating engaging interfaces <br>
+                that <b>drive user retention and conversion rates</b> for digital   products. 
+              </p>
+              <span>
+                <a
+                    aria-label="linkedin"
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/yourname/"
+                >
+                <i class="fa-brands fa-linkedin" alt="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                    aria-label="github"
+                        rel="noreferrer"
+                    target="_blank"
+                    href="https://github.com/yourname"
+                >
+                <i class="fa-brands fa-github"></i>
+                </a>
+              </span>
+            </div>
+            <div class="hero-img">
+            </div>
+          </div>
+
+          <div class="skills">
+              <p>Tech Stack</p>
+              <div class="logos">
+                <ul class="skills-list">
+                  <li key=1>
+                    <img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon" />
+                  </li>
+                  <li key=2>
+                    <img src="https://skillicons.dev/icons?i=js,ts" alt="skill-icon" />
+                  </li>
+                  <li key=3>
+                    <img src="https://skillicons.dev/icons?i=react,next" alt="skill-icon" />
+                  </li>
+                  <li key=4>
+                    <img src="https://skillicons.dev/icons?i=tailwind,scss" alt="skill-icon" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About section -->
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="img-side">
+          <img src="Assets/working-emoji.webp" alt="emoji" class="work-emoji" />
+          <img src="./Assets/about-img.webp"alt="mee" class="img-side__main-img" />
+          <span>
+            <img src="Assets/text2.svg" alt="text" />
+          </span>
+        </div>
+        <div class="text-side">
+          <h3>About me <hr></h3>
+          <h4>
+            Front-end Developer <br /> based in Nairobi, Kenya 📍
+          </h4>
+          <p>
+            I'm passionate in designing and developing clean UI/UX for digitalproducts.
+            <br />
+            <br />
+            My main stack is JavaScript & frameworks such as React/Next.js combined with
+            TailwindCSS and TypeScript.
+          </p>
+          <a href="./Assets/Austine_CV.pdf" 
+          download="austine_CV.pdf"
+          class="download-btn">
+            <span> Download CV</span>
+            <i class="fa-solid fa-arrow-down" style="size: 2rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+
+  <section id="projects" class="project">
+        <div class="container">
+          <div class="project-content">
+            <p class="project-content-p">portfolio: <hr style="height: 3px; width: 99%; background-color: #1a1b1e; border: none; border-radius: 10px; top: .5rem;"></p>
+            
+            <!-- <img src="./Assets/images/projects/arrow.png" alt="" style="height: 10px; width: 10px; color: #147efb;"> -->
+
+
+            <!-- <h3>Each project is a unique piece of development 🧩</h3> -->
+
+
+            <!-- <div class="projects-grid">
+              <ProBox
+                title="Car Rental"
+                img={CarRental}
+                date="(February 2023)"
+                description="A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars."
+                techno1="React"
+                techno2="SCSS"
+                code="https://github.com/username/car-rental"
+                demo="https://car-rental-ten.vercel.app/"
+                scrollY="-83%"
+                icon="🚗"
+              />
+
+              <ProBox
+                title="Coindom"
+                date="(February 2023)"
+                img={CoinDom}
+                description="Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time."
+                techno1="React"
+                techno2="SCSS"
+                code="https://github.com/username/coindom-crypto"
+                demo="https://coindom-crypto-search.vercel.app/"
+                scrollY="-74%"
+                icon="🪙"
+                cName="reversed-proj"
+              />
+
+              <ProBox
+                title="Gymate"
+                date="(January 2023)"
+                img={Gymate}
+                description="A gym website is a comprehensive resource for fitness information, class schedules, membership options, and tools to help users achieve their fitness goals."
+                techno1="React"
+                techno2="Tailwind CSS"
+                code="https://github.com/username/Gymate"
+                demo="https://gymate-iota.vercel.app/"
+                scrollY="-89%"
+                icon="🏋️"
+              />
+
+              <ProBox
+                title="Ecommerce"
+                date="(December 2022)"
+                img={Raouf}
+                description="With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need."
+                techno1="React"
+                techno2="Vanila CSS"
+                code="https://github.com/username/Minimalist-E-commerce"
+                demo="https://minimalist-e-commerce.vercel.app/"
+                scrollY="-71%"
+                icon="🛒"
+                cName="reversed-proj"
+              />
+            </div> -->
+            <h3>Project designs  🧩</h3>
+            <div class="projects-grid">
+
+
+              <div class="pro">
+                <img src="/Assets/car-rental_.webp" alt="Car Rental">
+                <div class="pro__text">
+                  <span>
+                    <h2>Car Rental</h2>
+                    <p>🚗</p>
+                  </span>
+                  <p>A car rental website is an online platform that  allows users to rent cars for personal or business   use. The website provides an interface for  searching, comparing, and reserving cars.</p>
+                  <div class="stack">
+                    <h2>React</h2>
+                    <h2>|</h2>
+                    <h2>SCSS</h2>
+                  </div>
+                  <div class="links">
+                    <p>Code: 
+                      <a href="#https://github.com/username/   car-rental">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </p>
+                    <p>Demo: 
+                      <a href="#https://car-rental-ten.vercel.app/  ">
+                        <i class="fa-solid  fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="reversed-pro">
+                <img src="/Assets/Coindom_.webp" alt="Car Rental">
+                <div class="pro__text">
+                  <span>
+                    <h2>Coindom</h2>
+                    <p>
+                      <i class="fa-solid fa-earth-africa"></i>
+                    </p>
+                  </span>
+                  <p>Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time.</p>
+                  <div class="stack">
+                    <h2>React</h2>
+                      <h2>|</h2>
+                    <h2>SCSS</h2>
+                  </div>
+                  <div class="links">
+                    <p>Code: 
+                      <a href="#https://github.com/username/coindom-crypto">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </p>
+                    <p>Demo: 
+                      <a href="#https://coindom-crypto-search.vercel.app/">
+                        <i class="fa-solid  fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="pro">
+                <img src="/Assets/gymate__.webp" alt="Car Rental">
+                <div class="pro__text">
+                  <span>
+                    <h2>Gymate</h2>
+                    <p>🏋️</p>
+                  </span>
+                  <p>A gym website is a comprehensive resource for fitness information, class schedules, membership options, and tools to help users achieve their fitness goals.</p>
+                  <div class="stack">
+                    <h2>React</h2>
+                    <h2>|</h2>
+                    <h2>TailwindCSS</h2>
+                  </div>
+                  <div class="links">
+                    <p>Code: 
+                      <a href="#https://github.com/username/Gymate">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </p>
+                    <p>Demo: 
+                      <a href="#https://gymate-iota.vercel.app/">
+                        <i class="fa-solid  fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="reversed-pro">
+                <img src="/Assets/e-commerce_.webp" alt="minimalistic e-comerce">
+                <div class="pro__text">
+                  <span>
+                    <h2>Ecommerce</h2>
+                    <p>
+                      <i class="fa-solid fa-cart-arrow-down"></i>
+                    </p>
+                    <!-- <p>🛒</p> -->
+                  </span>
+                  <p>With a focus on simplicity and clean design, this store prioritizes user experience, making it easy for customers to find and purchase the products they need.</p>
+                  <div class="stack">
+                    <h2>React</h2>
+                    <h2>|</h2>
+                    <h2>Vanilla CSS</h2>
+                  </div>
+                  <div class="links">
+                    <p>Code: 
+                      <a href="#https://github.com/username/Minimalist-E-commerce">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </p>
+                    <p>Demo: 
+                      <a href="#https://minimalist-e-commerce.vercel.app/">
+                        <i class="fa-solid  fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="more">
+                <button>Explore More 
+                  <i class="fa-solid fa-angles-right"></i>
+                </button>
+              </div>
+
+            </div>
+          </div> 
+          <h2 class="new-projects">New projects coming soon.. 🤠</h2>
+        </div>
+  </section>
+
+  <!-- Contact section -->
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact__content">
+        <div class="contact__title">
+          <p>contact:<hr style="height: 2px; width: 99%; background-color: #1a1b1e; border: none; border-radius: 10px; top: .5rem;"></p>
+          <h3>I am easy to find!  Hit me up! 👇</h3>
+        </div>
+        <div class="contact__icons">
+          <div class="contact__icon-box">
+            <span style="color: #fff;">
+              <!-- <img src="/Assets/images/contact/profile-location.png" alt=""> -->
+              <i class="fa-solid fa-map-location-dot" style="size: 3rem;"></i>
+            </span>
+            <div class="contact__info">
+              <h3>Location</h3>
+              <p></i>Nairobi, KENYA</p>
+            </div>
+          </div>
+
+          <div class="contact__icon-box">
+            <span>
+              <img src="/Assets/inbox.webp" alt="">
+            </span>
+
+            <div class="contact__info">
+              <h3>Mail</h3>
+              <a href="mailto:pipinstall85@gmail.com">
+                pipinstall85@gmail.com
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+
+  <footer>
+    <div class="container">
+      <div class="footerc">
+        <h3>
+          All rights reserved | Copyright © Agunda, 2024. 
+        </h3>
+        <div class="footerc__socials">
+          <a
+            aria-label="linkedin"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/istefan-topalovic-dev/"
+          >
+            <i class="fa-brands fa-linkedin" alt="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            aria-label="github"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/username"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
