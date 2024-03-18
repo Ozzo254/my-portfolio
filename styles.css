@@ -1131,9 +1131,12 @@ li {
         text-align: center;
         text-transform: none
 }
-@media (max-width: 900px){
+@media (max-width: 500px){
         .pro{
+                display: flex;
                 text-align: center;
+                align-items: center;
+                justify-content: center;
                 flex-direction: column;
         }
         .pro img{
@@ -1143,7 +1146,7 @@ li {
                 margin: auto;
                 width: -moz-fit-content;
                 width: -webkit-fit-content;
-                width: 75rem;
+                width: auto;
         }
         
 }
