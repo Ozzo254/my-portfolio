@@ -68,3 +68,17 @@ window.addEventListener('resize', function() {
         menu.classList.remove('active');
     }
 });
+
+function darkModeBtn() {
+  const darkMode = document.querySelector('.dark-mode-btn')
+  const darkIcon = document.getElementById('dark-mode-icon')
+
+  darkMode.addEventListener("click", function() {
+    if (darkIcon.querySelector('.fa fa-toggle-off') === '.fa fa-toggle-off') {
+      darkIcon.querySelector('.fa fa-toggle-on')
+    }
+    else {
+      darkIcon.querySelector('.fa fa-toggle-off')
+    }
+  })
+}

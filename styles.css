@@ -269,7 +269,10 @@ li {
         padding: 7px 7px 7px 0px;
 }
 
-
+.dark-mode-btn:hover{
+        color: #007bff;
+        cursor: pointer;
+}
 
 .container-main {
     /* display: flex;
