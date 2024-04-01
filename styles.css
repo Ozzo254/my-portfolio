@@ -18,6 +18,12 @@ body {
         position: relative;
 }
 
+.dark-mode {
+        background-color: #000;
+        /* Dark mode background color */
+        color: #fff;
+        /* Dark mode font color */
+}
 
 .container {
         margin: 0 auto;

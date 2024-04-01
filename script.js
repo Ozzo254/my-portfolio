@@ -23,19 +23,19 @@ const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 
 darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
+  body.classList.toggle('dark-mode');
 
-    if (body.classList.contains('dark-mode')) {
-        // Set device theme to dark
-        document.documentElement.setAttribute('data-theme', 'dark');
-        // Update icon to indicate dark mode is on
-        darkModeToggle.textContent = 'Off';
-    } else {
-        // Set device theme to light
-        document.documentElement.setAttribute('data-theme', 'light');
-        // Update icon to indicate dark mode is off
-        darkModeToggle.textContent = 'on';
-    }
+  if (body.classList.contains('dark-mode')) {
+    // Set device theme to dark
+    document.documentElement.setAttribute('data-theme', 'dark');
+    // Update icon to indicate dark mode is on
+    darkModeToggle.textContent = 'Off';
+  } else {
+    // Set device theme to light
+    document.documentElement.setAttribute('data-theme', 'light');
+    // Update icon to indicate dark mode is off
+    darkModeToggle.textContent = 'on';
+  }
 });
 
 
@@ -52,29 +52,29 @@ darkModeToggle.addEventListener('click', () => {
 // ]);
 
 function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
 }
 
 const toggleButton = document.querySelector('.toggle-button');
 const menu = document.querySelector('.menu');
 
-window.addEventListener('resize', function() {
-    if (window.innerWidth <= 768) {
-        toggleButton.style.display = 'flex';
-        menu.classList.remove('active');
-    } else {
-        toggleButton.style.display = 'none';
-        menu.classList.remove('active');
-    }
+window.addEventListener('resize', function () {
+  if (window.innerWidth <= 768) {
+    toggleButton.style.display = 'flex';
+    menu.classList.remove('active');
+  } else {
+    toggleButton.style.display = 'none';
+    menu.classList.remove('active');
+  }
 });
 
 function darkModeBtn() {
   const darkMode = document.querySelector('.dark-mode-btn')
   const darkIcon = document.getElementById('dark-mode-icon')
 
-  darkMode.addEventListener("click", function() {
-    if (darkIcon.querySelector('.fa fa-toggle-off') === '.fa fa-toggle-off') {
+  darkMode.addEventListener("click", function () {
+    if (darkIcon.querySelector() === '.fa fa-toggle-off') {
       darkIcon.querySelector('.fa fa-toggle-on')
     }
     else {
