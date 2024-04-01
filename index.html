@@ -23,10 +23,10 @@
         <li><a href="#Project">Project</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
-      <button class= "dark-mode-btn" onclick="toggleDarkMode()">
+      <!-- <button class= "dark-mode-btn" onclick="toggleDarkMode()">
         Dark </br>mode
         <i id="dark-mode-icon" class="fa fa-toggle-off" aria-hidden="true" ></i>
-      </button>
+      </button> -->
     </div>
   </nav>
 
@@ -45,7 +45,7 @@
               </h3>
               <p>
                 Your go-to guru for data and design magic! Let's create captivating web experiences together. Trust me to blend data insights with stunning visuals for results that sparkle. <br>
-                Ready to <b> drive your user retention, conversion rates </b>? Make your digital dreams come true. <br>
+                Ready to <b> drive your user retention & conversion rates </b>? Make your digital dreams come true. <br>
                 Let's chat!
               </p>
               <span>
@@ -61,7 +61,7 @@
                     aria-label="github"
                         rel="noreferrer"
                     target="_blank"
-                    href="https://github.com/yourname"
+                    href="https://github.com/Ozzo254"
                 >
                 <i class="fa-brands fa-github"></i>
                 </a>
@@ -350,11 +350,11 @@
     var darkModeIcon = document.getElementById('dark-mode-icon');
 
     if (body.classList.contains('dark-mode')) {
-        body.classList.remove('dark-mode');
-        darkModeIcon.className = 'fa fa-toggle-off';
+      body.classList.add('dark-mode');
+      darkModeIcon.className = 'fa fa-toggle-off';
     } else {
-        body.classList.add('dark-mode');
-        darkModeIcon.className = 'fa fa-toggle-on';
+      darkModeIcon.className = 'fa fa-toggle-on';
+      body.classList.remove('dark-mode');
     }
 }
 
